@@ -23,9 +23,15 @@ public class CollectingItems : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Cursor.visible = true;
         }
+     }
 
-
-
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+            Cursor.visible = true;
+        }
     }
-        
+
 }

@@ -9,7 +9,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Cursor.visible = false;
-        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void QuitGame()
@@ -21,5 +20,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+
 
 }
